@@ -4,11 +4,27 @@
 // Array example: bankAccounts in /data/data.js
 // getAllWithdrawals(bankAccounts) => [3432, 0, 43242.34, 0, 23432]
 
+import { bankAccounts } from "../data/data";
+
 export function getAllWithdrawals(array) {
   // Your code goes here...
+  const withdrawalSums = [];
+  
+  for (let i = 0; i < array.length; i++) {
+    let sum = 0;
+    const account = array[i];
 
-}
+    if (account.withdrawals && account.withdrawals.length > 0) {
+      for (let j = 0; j < account.withdrawals.length; j++) {
+        sum += account.withdrawals[j];
+      }
+    }
 
+    withdrawalSums.push(sum);
+  }
+
+    return withdrawalSums;
+  }
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-11"
 // If the test has all tests passed, switch to the next exercise file
