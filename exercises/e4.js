@@ -5,15 +5,8 @@
 
 export function findMinValueInArray(array) {
   // Your code goes here...
-  if (array.length === 0) {
-    // Handle empty array
-    return null;
-  }
-
-  // Initialize min with the first element of the array
   let min = array[0];
 
-  // Iterate through the array to find the min
   for (let i = 1; i < array.length; i++) {
     if (array[i] < min) {
       min = array[i];
@@ -25,10 +18,6 @@ export function findMinValueInArray(array) {
 
 export function findMaxValueInArray(array) {
   // Your code goes here...
-  if (array.length === 0) {
-    return null;
-  }
-
   let max =  array[0];
 
   for (let i = 1; i < array.length; i++) {

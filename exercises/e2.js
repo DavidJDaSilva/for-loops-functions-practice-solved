@@ -6,13 +6,8 @@ export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
   const integers = [];
 
-  for (let x = 0; x <= max; x++) {
-
-    const squareRoot = Math.sqrt(x);
-
-    if (Number.isInteger(squareRoot)) {
-      integers.push(x);
-    }
+  for (let x = 0; x * x <= max; x++) {
+    integers.push(x *x);
   }
 
   return integers;

@@ -7,7 +7,9 @@
 
 export function doesArrayInclude(array, value) {
   // Your code goes here...
+  const value = array.includes(a);
 
+  return value;
 }
 
 

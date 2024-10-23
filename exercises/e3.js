@@ -10,10 +10,6 @@
 
 export function getAverage(array) {
   // Your code goes here...
-  if (array.length === 0) {
-    return 0; // Handle the case when the array is empty to avoid division by zero
-}
-
 let sum = 0;
 for (let i = 0; i < array.length; i++) {
     sum += array[i];

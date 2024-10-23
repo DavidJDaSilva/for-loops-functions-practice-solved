@@ -7,7 +7,9 @@
 
 export function flatArrays(array) {
   // Your code goes here...
+ const arr = array.flat();
 
+ return arr;
 }
 
 
